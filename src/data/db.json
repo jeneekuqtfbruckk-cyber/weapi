@@ -1,0 +1,41 @@
+[
+  {
+    "id": "708aaf64-8fc2-44ff-959d-eb5903285443",
+    "name": "AdoptAPet",
+    "description": "Resource to help get pets adopted",
+    "auth": "`apiKey`",
+    "https": true,
+    "cors": "Yes",
+    "link": "https://www.adoptapet.com/public/apis/pet_list.html",
+    "category": "Animals",
+    "is_active": false,
+    "atoms_cost": 1,
+    "last_validated": "2026-01-20T07:14:40.386Z"
+  },
+  {
+    "id": "344c380b-99dd-4fc9-9448-3a8059c81d04",
+    "name": "Axolotl",
+    "description": "Collection of axolotl pictures and facts",
+    "auth": "No",
+    "https": true,
+    "cors": "No",
+    "link": "https://theaxolotlapi.netlify.app/",
+    "category": "Animals",
+    "is_active": true,
+    "atoms_cost": 1,
+    "last_validated": "2026-01-20T07:14:40.389Z"
+  },
+  {
+    "id": "8db199ad-3715-441d-a266-95dd4398142b",
+    "name": "Cat Facts",
+    "description": "Daily cat facts",
+    "auth": "No",
+    "https": true,
+    "cors": "No",
+    "link": "https://alexwohlbruck.github.io/cat-facts/",
+    "category": "Animals",
+    "is_active": true,
+    "atoms_cost": 21,
+    "last_validated": "2026-01-20T07:14:40.389Z"
+  }
+]
