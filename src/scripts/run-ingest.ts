@@ -1,5 +1,6 @@
 import { ingestPublicApis } from "./ingest";
 
+// Wrapper to run async function
 (async () => {
     try {
         await ingestPublicApis();
