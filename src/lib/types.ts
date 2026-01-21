@@ -1,19 +1,24 @@
 export interface ApiEntry {
-    id: string;
+    id: string; // UUID or unique slug
     name: string;
     description: string;
-    auth: string;
+    auth: string; // "apiKey", "OAuth", "No", etc.
     https: boolean;
-    cors: string;
+    cors: string; // "Yes", "No", "Unknown"
     link: string;
     category: string;
-    is_active?: boolean;
-    atoms_cost: number;
-    last_validated?: string;
+
+    // WEAPI Augmented Fields
+    provider?: string; // e.g. "Google", "Twitter"
+    logo_url?: string; // Validated logo
+    openapi_url?: string; // Location of spec
+    atoms_cost: number; // Atomic pricing cost (default 1)
+    last_validated?: string; // ISO Date
+    is_active: boolean; // Result of validation
 }
 
 export interface Category {
-    id: string;
-    label: string;
-    icon: any; // Lucide icon
+    id: string; // slugified name e.g. "development-tools"
+    name: string; // Display name e.g. "Development Tools"
+    count: number;
 }
